@@ -1,0 +1,6 @@
+writer_task:
+  description: >
+    Prepare a professional and clear post from {code} and {description} for {topic} with appropriate tags to get more engagements
+  expected_output: >
+    A {topic} post from {code} and {description} with appropriate tags.
+  agent: writer
