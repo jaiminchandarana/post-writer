@@ -2,8 +2,7 @@
 
 
 
-This disease identifier identifies disease, provides description and precaution for identified disease from lab report of patient provided in pdf or image.
-
+This post writer provides high-quality content with relevant tags.
 
 
 ## Prerequisites
