@@ -1,17 +1,19 @@
-#!/usr/bin/env python
 import sys
 import warnings
 from post_writer.crew import PostWriter
-
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
-# This main file is intended to be a way for you to run your
-# crew locally, so refrain from adding unnecessary logic into this file.
-# Replace with inputs you want to test with, it will automatically
-# interpolate any tasks and agents information
-topic = input("Enter a plateform to write post for : ")
-description = input("Provide some information of your project : ")
-code = input("paste your main file here(optional) : ")
+def choice():
+    topic = input("Enter a plateform to write post for : ")
+    description = input("Provide some information of your project : ")
+    code = input("paste your main file here(optional) : ")
+    if not topic or not description:
+        print("Enter plateform and information of your project.\n")
+        return choice()
+    return topic,description,code
+
+topic,description,code = choice()
+
 def run():
     """
     Run the crew.
